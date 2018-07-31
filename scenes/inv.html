@@ -1,0 +1,495 @@
+  <a-image src="#home" position=" 0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+			 event-set__click="_target: #ganti; template: src: scenes/mainmenu.html"
+			 ></a-image>
+
+	<a-image src="#anim" position=" -0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+			 event-set__click="_target: #ganti; template: src: scenes/main.html"
+			 ></a-image>
+
+<a-entity id="main-invertebrata" visible="true">
+	  <a-image 
+        id="inv-porifera" 
+        class="tile"
+        position="-3 2 -3" 
+        src="#porifera"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-porifera; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       >
+      </a-image> 
+      <a-text <a-text position="-3 1.5 -3" scale="1 1 1"
+      value="PORIFERA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+	  <a-image 
+        id="inv-ctenophora" 
+        class="tile"
+        position="-1 2.5 -3" 
+        src="#ctenophora"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-ctenophora; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       ></a-image>
+       <a-text <a-text position="-1 2 -3" scale="1 1 1"
+      value="CTENOPHORA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+       <a-image 
+        id="inv-cnidaria" 
+        class="tile"
+        position="1 2.5 -3" 
+        src="#cnidaria"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-cnidaria; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       ></a-image>
+       <a-text <a-text position="1 2 -3" scale="1 1 1"
+      value="CNIDARIA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+	<a-image 
+        id="inv-mollusca" 
+        class="tile"
+        position="3 2 -3" 
+        src="#mollusca"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-mollusca; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       ></a-image>
+       <a-text <a-text position="3 1.5 -3" scale="1 1 1"
+      value="MOLLUSCA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+	<a-image 
+        id="inv-annelida" 
+        class="tile"
+        position="-3 0 -3" 
+        src="#annelida"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-annelida; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       >
+      </a-image> 
+      <a-text <a-text position="-3 -0.5 -3" scale="1 1 1"
+      value="ANNELIDA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+      	<a-image 
+        id="inv-platy" 
+        class="tile"
+        position="-1 -0.5 -3" 
+        src="#platyhelminthes"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-platyhelminthes; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       >
+      </a-image> 
+      <a-text <a-text position="-1 -1 -3" scale="1 1 1"
+      value="PLATYHELMINTHES" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+      <a-image 
+        id="inv-nematoda" 
+        class="tile"
+        position="1 -0.5 -3" 
+        src="#nematoda"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-nematoda; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       >
+      </a-image> 
+      <a-text <a-text position="1 -1 -3" scale="1 1 1"
+      value="NEMATODA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+      <a-image 
+        id="inv-art" 
+        class="tile"
+        position="3 0 -3" 
+        src="#arthropoda"
+        scale="1.5 1.5 1.5"
+        event-set__click="_target: #penj-arthropoda; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale: 1.5 1.5 1.5"
+       >
+      </a-image> 
+      <a-text <a-text position="3 -0.5 -3" scale="1 1 1"
+      value="ARTHROPODA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+      <a-image 
+        id="inv-echino" 
+        class="tile"
+        position="0 1 -3" 
+        src="#echino"
+        scale="1.5 1"
+        event-set__click="_target: #penj-echino; visible: true"
+        event-set__click2="_event: click; _target: #main-invertebrata; visible: false"
+        event-set__mouseenter="scale: 2 2 2"
+        event-set__mouseleave="scale:1.5 1"
+       >
+      </a-image> 
+      <a-text <a-text position="0 0.5 -3" scale="1 1 1"
+      value="ECHINODERMATA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+</a-entity>
+
+
+        <a-entity id="penj-porifera" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" 
+        	event-set__click="_target: #penj-porifera; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Porifera adalah invertebrata tanpa jaringan sejati (parazoa)\nFase hidup porifera ada dua yaitu:\nHidup berenang bebas (larva) dan Hidup menetap (sesil/fase dewasa)\nPorifera tidak memiliki organ pencernaan, sistem saraf, dan sistem peredaran darah; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="cal"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Porifera; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#pori1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cal; text: value: Calcarea\nSpikula dari zat kapur dan hidup di laut dangkal;"
+			 ></a-image>
+
+			 <a-image src="#pori2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cal; text: value: Hexatinellida\nSpikula dari zat kersik dan hidup di laut dalam;"
+			 ></a-image>
+
+
+			 <a-image src="#pori3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cal; text: value: Demospongiae\nGolongan bertulang lunak;"
+			 ></a-image>
+
+		</a-entity>
+
+
+		<a-entity id="penj-ctenophora" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-ctenophora; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Ctenophora adalah hewan berongga, berhabitat di laut, bertubuh lunak tidak berwarna dan menghasilkan cahaya.\nMemiliki mulut dan lubang anus dan tentakel untuk menangkap mangsa; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="cte"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Contoh; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#cte1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cte; text: value: Mnemiopsis;"
+			 ></a-image>
+
+			 <a-image src="#cte2" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cte; text: value: Beroe cucumis;"
+			 ></a-image>
+		</a-entity>
+
+		<a-entity id="penj-cnidaria" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-cnidaria; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Cnidaria memiliki sel knidosit untuk menyengat. Sebagian hidup di laut, tubuh simetris radial yang terdiri atas kantong dan rongga gastrovaskuler.\nMenangkap mangsa dengan tentakel dg nematosista.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="cni"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Struktur tubuh yang menunjukkan fase reproduksi berbeda; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#cni1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cni; text: value: Polip\nFase reproduksi aseksual;"
+			 ></a-image>
+
+			 <a-image src="#cni2" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cni; text: value: Medusa\nFase reproduksi seksual;"
+			 ></a-image>
+		</a-entity>
+
+
+		<a-entity id="penj-mollusca" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-mollusca; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Mollusca bertubuh lunak, tidak beruas dan dilindungi cangkang bikarbonat\nSistem pencernaan lengkap dengan sistem peredaran darah terbuka, dan sistem reproduksi seksual.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="mol"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#mol1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mol; text: value: Polyplacophora\ncontoh: Chiton sp.;"
+			 ></a-image>
+
+			 <a-image src="#mol2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mol; text: value: Scapopoda\ncontoh: Dentalium Vulgare;"
+			 ></a-image>
+
+			 <a-image src="#mol3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mol; text: value: Gastropoda\ncontoh: Achatina Fulica;"
+			 ></a-image>
+
+			 <a-image src="#mol4" position=" -0.5 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mol; text: value: Chepalopoda\ncontoh: Cumi-cumi, gurita, nautilus."
+			 ></a-image>
+
+			 <a-image src="#mol5" position=" 0.5 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mol; text: value: Pelechypoda\ncontoh: Anadonta, tetrabatulina, lampilis;"
+			 ></a-image>
+
+		</a-entity>
+
+
+
+		<a-entity id="penj-annelida" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-annelida; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Annelida memiliki tubuh sejati yang dilapisi kutikula, dan memiliki ruas di tubuh dalam dan luar, dimana tiap ruas memiliki alat reproduksi.\nAlat pernapasan berupa kulit dan insang. Saluran ekresi berupa sepasang nefridia.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="ann"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Annelida dibagi menjadi 3 kelas; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#ann1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ann; text: value: Polychaeta (rambut banyak)\nnereis, arenicola,lysidice (cacing wawo);"
+			 ></a-image>
+
+			 <a-image src="#annelida" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ann; text: value: Oligochaeta (rambut sedikit)\nLumbricus terestris;"
+			 ></a-image>
+
+			 <a-image src="#ann3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ann; text: value: Hirudinea(tidak punya rambut)\nHirudo medicinalis (lintah), Haemadipsa zeylanica;"
+			 ></a-image>
+		</a-entity>
+
+		<a-entity id="penj-platyhelminthes" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-platyhelminthes; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Tubuh platyhelminthes memanjang pipih. Sistem pencernaan tidak sempurna berupa rongga gastrovaskuler.\nSistem ekresi sederhana terdiri dari sel api/sel bulu getar (solenosit). Sistem saraf berupa tangga tali. Reproduksi secara veetatif dan generatif.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="pla"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Platyhelminthes; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#platyhelminthes" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pla; text: value: Turbellaria (cacing rambut getar)\nPlanaria sp.;"
+			 ></a-image>
+
+			 <a-image src="#pla2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pla; text: value: Trematoda ( cacing isap)\nFasciola hepatica (cacing hati), parasit manusia: clonorchis sinensis.;"
+			 ></a-image>
+
+			 <a-image src="#pla3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pla; text: value: Cestoda(cacing pita)\nTania solium, Taenia saginata;"
+			 ></a-image>
+		</a-entity>
+
+
+		<a-entity id="penj-nematoda" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-nematoda; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Nematoda (cacing gilik tidak memiliki sistem peredaran darah dan jantung, tidak bersilia dan dilapisi oleh kutikula transparan. Sistem pencernaan lengkap, memiliki cairan pseudoselom. Sistem saraf memiliki ganglion serebral. Sistem reproduksi aseksual.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="nem"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Anggota filum nematoda; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#nematoda" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing Gelang (Ascaris lumbricoides);"
+			 ></a-image>
+
+			 <a-image src="#nem2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing tambang (Ancylostoma);"
+			 ></a-image>
+
+			 <a-image src="#nem3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing kremi (Enterebius vermicularis);"
+			 ></a-image>
+
+			 <a-image src="#nem4" position=" -1 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing filaria (Wuchereria bancrofti."
+			 ></a-image>
+
+			 <a-image src="#nem5" position=" 0 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing otot (Trichinella spiralis);"
+			 ></a-image>
+
+			 <a-image src="#nem6" position=" 1 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #nem; text: value: Cacing akar tanaman\n(Heterodera radicicola);"
+			 ></a-image>
+		</a-entity>
+
+
+
+		<a-entity id="penj-arthropoda" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-arthropoda; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Tubuh platyhelminthes memanjang pipih. Sistem pencernaan tidak sempurna berupa rongga gastrovaskuler.\nSistem ekresi sederhana terdiri dari sel api/sel bulu getar (solenosit). Sistem saraf berupa tangga tali. Reproduksi secara veetatif dan generatif.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="art"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Arthropoda; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#arthropoda" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #art; text: value: Crustacea\ncontoh: udang, kepiting;"
+			 ></a-image>
+
+			 <a-image src="#art2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #art; text: value: Chelicerata\ncontoh: laba-laba, kalajengking;"
+			 ></a-image>
+
+			 <a-image src="#art3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #art; text: value: Myriapoda\ncontoh: kaki seribu;"
+			 ></a-image>
+
+			 <a-image src="#art4" position=" 0 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #art; text: value: Hexaopoda\ncontoh: serangga;"
+			 ></a-image>
+		</a-entity>
+
+		<a-entity id="penj-echino" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-echino; visible: false"
+        	event-set__click2="_event: click; _target: #main-invertebrata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Echinodermata berarti hewan berkulit duri\nBerhabitat di laut, tubuh tidak bersegmen dan kaki ambulakral.\nSistem pencernaan lengkap, Sistem reproduksi secara aseksual dan seksual. Sistem saraf berupa saraf radial yaitu cincin yang ada di mulut.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="ech"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Echinodermata; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#echino" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ech; text: value: Asteroida (bintang laut);"
+			 ></a-image>
+
+			 <a-image src="#ech2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ech; text: value: Ophiuroidea (bintang ular);"
+			 ></a-image>
+
+			 <a-image src="#ech3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ech; text: value: Echinoidea (landak laut);"
+			 ></a-image>
+
+			 <a-image src="#ech4" position=" 1 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ech; text: value: Holothuroidea (timun laut);"
+			 ></a-image>
+			 <a-image src="#ech5" position=" -1 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ech; text: value: Crinoidea (lili laut);"
+			 ></a-image>
+		</a-entity>
+
+
+
+      <a-sky color="#4a9b77"></a-sky>
+
+
+		<a-entity camera look-controls wasd-controls position="0 1 0.5">
+        <a-entity cursor
+                  fuse="false"
+                  geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
+                  material="color: #efdf02"
+                  position="0 0 -1.5"></a-entity>
+      </a-entity>

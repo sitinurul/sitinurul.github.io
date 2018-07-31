@@ -1,0 +1,354 @@
+	  <a-image src="#home" position=" 0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+			 event-set__click="_target: #ganti; template: src: scenes/mainmenu.html"
+			 ></a-image>
+
+	<a-image src="#anim" position=" -0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+			 event-set__click="_target: #ganti; template: src: scenes/main.html"
+			 ></a-image>
+
+
+<a-entity id="main-chordata" visible="true">
+
+ 		<a-entity
+		  position="0 2.5 -3"
+		  geometry="primitive: plane; width: 3.5; height: 0.7"
+		  material="color: #475891"
+		  event-set__click="_target: #penj-chordata; visible: true"
+		  event-set__click2="_event: click; _target: #main-chordata; visible: false"
+
+		  text="value: Pengertian Chordata; width: 5; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+
+		<a-obj-model  id="ver-pisces"  src="#objfish" mtl="#mtlfish"
+			position="-2.5 1.5 -3" 
+			rotation="0 90 0"
+			scale="0.3 0.3 0.3"
+			event-set__click="_target: #penj-pisces; visible: true;"
+			event-set__click2="_event: click; _target: #main-chordata; visible: false">
+	         <a-animation attribute="rotation"
+                     easing="linear"
+                     dur="6000"
+                     to="0 450 0"
+                     repeat="indefinite">
+
+        	</a-animation>
+			</a-obj-model>
+	
+      <a-text <a-text position="-2.5 1 -3" scale="1 1 1"
+      value="PISCES" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center" ></a-text>
+
+     <a-image 
+        class="tile"
+        position="0 0.4 -3" 
+        src="#frog"
+        scale="1 1 1"
+        event-set__click="_target: #penj-amphibia; visible: true"
+        event-set__click2="_event: click; _target: #main-chordata; visible: false"
+
+        event-set__mouseenter="scale: 1.5 1.5 1.5"
+        event-set__mouseleave="scale: 1 1 1"
+       >
+      </a-image> 
+      <a-text <a-text position="0 0 -3" scale="1 1 1"
+      value="AMPHIBIA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+      <a-image 
+        class="tile"
+        position="2.5 1.3 -3" 
+        src="#turtle"
+        scale="1.2 1 1"
+        event-set__click="_target: #penj-reptilia; visible: true"
+        event-set__click2="_event: click; _target: #main-chordata; visible: false"
+        event-set__mouseenter="scale: 1.5 1.5 1.5"
+        event-set__mouseleave="scale: 1.2 1 1"
+       >
+      </a-image> 
+      <a-text <a-text position="2.5 1 -3" scale="1 1 1"
+      value="REPTILIA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+
+       <a-image 
+        class="tile"
+        position="-2 0 -3" 
+        src="#bird"
+        scale="1.3 1.3 1.3"
+        event-set__click="_target: #penj-aves; visible: true"
+        event-set__click2="_event: click; _target: #main-chordata; visible: false"
+        event-set__mouseenter="scale:2 2 2 "
+        event-set__mouseleave="scale: 1.3 1.3 1.3"
+       >
+      </a-image> 
+      <a-text <a-text position="-2 -0.5 -3" scale="1 1 1"
+      value="AVES" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center"></a-text>
+
+
+
+		<a-obj-model  id="ver-mamalia"  src="#objcat1" mtl="#mtlcat1"
+			position="2 0 -3" 
+			rotation="0 -45 0"
+			scale="0.03 0.03 0.03"
+			event-set__click="_target: #penj-mamalia; visible: true"
+			event-set__click2="_event: click; _target: #main-chordata; visible: false"
+			event-set__mouseenter="scale:0.05 0.05 0.05 "
+        	event-set__mouseleave="scale: 0.03 0.03 0.03"
+
+        	>
+			</a-obj-model>
+			      <a-text <a-text position="2 -0.5 -3" scale="1 1 1"
+      value="MAMALIA" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center" ></a-text>
+
+</a-entity>
+
+
+		<a-entity id="penj-chordata" visible="false">
+       	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" 
+        	event-set__click="_target: #penj-chordata; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"
+></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Chordata memiliki ciri-ciri umum seperti tubuh simetris bilateral, memiliki susunan saraf pusat yang berbentuk pembuluh, dan memiliki korda dorsalis (kerangka sumbu tubuh); 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="cho"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Subfilum Chordata; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#cho1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cho; text: value: Subfilum Urochordata (Tunicata)\nNotokorda lenyap pada masa perkembangannya;"
+			 ></a-image>
+
+			 <a-image src="#frog" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cho; text: value: Subfilum Vertebrata\nNotokorda berubah menjadi tulang belakang pada masa perkembangannya;"
+			 ></a-image>
+
+
+			 <a-image src="#cho3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #cho; text: value: Subfilum Cephalochordata\nSaraf dorsal dan celah faring berkembang baik;"
+			 ></a-image>
+
+		</a-entity>
+	
+
+
+
+<a-entity id="penj-amphibia" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-amphibia; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Amphibia hidup di darat dan air dan termasuk hewan berdarah dingin. Alat pernapasan berupa paru-paru, kulit dan insang.\nReproduksi dengan fertilisasi eksternal dan mengalami metamorfosis.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="amp"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value:Amphibia dibagi menjadi beberapa ordo:; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#amp1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #amp; text: value: Urodela (caudata)\ncontoh: Axolot, salamander;"
+			 ></a-image>
+
+			 <a-image src="#amp2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #amp; text: value: Gymnophiona (Apoda)\ncontoh: Ichthyophis Glutinosus (salamander cacing);"
+			 ></a-image>
+
+			 <a-image src="#frog" position=" 1 0 -2" width="1" height="1" sound="src: #frogy; on: click"
+			 event-set__mouseenter="_target: #amp; text: value: Anura (Salientis)\ncontoh: Rana pipiens (katak hijau), Bufo terestris;"
+			 ></a-image>
+
+		</a-entity>
+	
+
+
+
+<a-entity id="penj-reptilia" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-reptilia; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Reptilia hidup di air, sistem pernapasan berupa paru-paru, poikoloterm menyesuaikan kehidupan darat. Kulit kering, bersisik dari zat tanduk, tidak berlendir. Alat kelamin terpisah, fertilisasi internal. Telurnya bercangkang.; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="rep"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value:Reptilia dibagi menjadi beberapa ordo:; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#rep1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #rep; text: value: Rhynchocephalia (Reptilia primitif)\ncontoh: Sphenodon punctatus (tuatara);"
+			 ></a-image>
+
+			 <a-image src="#turtle" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #rep; text: value: Chlelonia\ncontoh: penyu hijau, Testuda gigantea (kura-kura raksasa);"
+			 ></a-image>
+
+			 <a-image src="#rep3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #rep; text: value: Crocodilia (loricata)\ncontoh: Crocodylus porosus (buaya indonesia);"
+			 ></a-image>
+
+			 <a-image src="#rep4" position=" 0 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #rep; text: value: Squamata (retilia bersisik)\ncontoh: Varanus komodoensis (komodo), kadal;"
+			 ></a-image>
+
+		</a-entity>
+	
+
+
+<a-entity id="penj-pisces" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-pisces; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"></a-plane>
+        	<a-entity
+        	id="ces"
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Pisces hidup di air, hewan berdarah dingin dan bergerak dengan sirip. Alat gerak aktif berupa otot bersegmen disebut miotom. Reproduksi secara fertilisasi eksternal dan internal. Alat kelamin terpisah dan hermafrodit.\nKlik tulisan ini!; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;"
+			 event-set__click="_target: #ces; text: value: Pisces terbagi pada 3 kelas:\n
+			 1. Agnatha/Cyclostomata (ikan tak berahang)\n2.Chondrichtyes (ikan bertulang rawan)\n3. Osteichtyes (ikan bertulang sejati);">
+			 </a-entity>
+        	<a-entity
+        		id="pis"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value:Pisces dibagi menjadi beberapa ordo:; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#pis1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pis; text: value: Ganoidea\ncontoh:Steur (bersisik mengkilat);"
+			 ></a-image>
+
+			 <a-image src="#pis2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pis; text: value: Elasmobranchii\ncontoh: Hiu;"
+			 ></a-image>
+
+			 <a-image src="#pis3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pis; text: value: Teleostei\ncontoh: Gurami;"
+			 ></a-image>
+
+			 <a-image src="#pis4" position=" 0 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #pis; text: value: Dipnoi\ncontoh: Ikan paru-paru;"
+			 ></a-image>
+
+		</a-entity>
+
+
+
+
+		<a-entity id="penj-aves" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-aves; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Aves termasuk homoiterm, tubuhnya dilindungi bulu-bulu. Aves memiliki alat gerak sayap dan kaki. ALat pernapasan berupa paru-paru dan pundi-pundi udara. Sistem peredaran darah tertutup berganda. Reproduksi fertilisasi internal dan ovipar; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="ave"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value:Aves dibagi menjadi beberapa ordo:; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#ave1" position=" -0.5 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #ave; text: value: Ordo yang sudah punah\nHesperornis, Ichtyornis, Diatrymiformes dll.;"
+			 ></a-image>
+
+			 <a-image src="#ave2" position=" 0.5 0 -2" width="1" height="1" sound="src: #birdy; on: click"
+			 event-set__mouseenter="_target: #ave; text: value: Ordo yang masih ada\nRosares (ayam buras), Ratites (burung kiwi), Oscines (buring penyanyi) dll;" 
+			 ></a-image>
+		</a-entity>
+
+
+
+		<a-entity id="penj-mamalia" visible="false">
+        	<a-plane material="color: #232323" position="1.3 1.9 -1.8" width="0.2" height="0.2" text="value:X; align: center; width: 2; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;" event-set__click="_target: #penj-mamalia; visible: false"
+        	event-set__click2="_event: click; _target: #main-chordata; visible: true"></a-plane>
+        	<a-entity
+			  position=" 0 1.5 -2"
+			  geometry="primitive: plane; width: 3"
+			  material="color: #d8c661"
+			  text="value: Mamalia hidup di darat atau air. Badannya tertutup rambut dan memiliki kelenjar susu. Kulitnya memiliki kelenjar minyak dan keringat. Sistem peredaran darah ganda. Pada umumnya vivipar, perkembangan embrio di dalam rahim; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+        	<a-entity
+        		id="mam"
+			  position=" 0 0.8 -2"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Beberapa ordo mamalia yaitu:; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
+			 <a-image src="#mam1" position=" -1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mam; text: value: Monotremata (berparuh dan berkloaka)\ncontoh: Ornithorhynchus (itik platipus);"
+			 ></a-image>
+
+			 <a-image src="#mam2" position=" 0 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mam; text: value: Insectivora (pemakan serangga)\ncontoh: Tupaia javanica (tikus pohon);"
+			 ></a-image>
+
+			 <a-image src="#mam3" position=" 1 0 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mam; text: value: Carnivora (pemakan daging)\n contoh: Felis leo (singa), Cania familiaris (anjing);" sound="src: #meow; on: click"
+			 ></a-image>
+
+			 <a-image src="#mam4" position=" -1 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mam; text: value: Rodential (pengerat)\ncontoh: mus musculus (mencit), marmut."
+			 ></a-image>
+
+			 <a-image src="#mam5" position=" 0 -1 -2" width="1" height="1"
+			 event-set__mouseenter="_target: #mam; text: value: Lagomorpha (gigi molar tumbuh terus)\ncontoh: Orictolagus cuniculus (kelinci);"
+			 ></a-image>
+
+			 <a-image src="#mam6" position=" 1 -1 -2" width="1" height="1" sound="src: #monkey; on: click"
+			 event-set__mouseenter="_target: #mam; text: value: Primata\ncontoh: Homo sapiens (manusia), Nycticebus coucang (kukang);"
+			 ></a-image>
+		</a-entity>
+
+      <a-sky color="#349189"></a-sky>
+
+
+		<a-entity camera look-controls wasd-controls position="0 1 0.5">
+        <a-entity cursor
+        		fuse="false"
+                  geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
+                  material="color: #efdf02"
+                  position="0 0 -1.5"></a-entity>
+      </a-entity>

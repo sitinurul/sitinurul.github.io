@@ -1,0 +1,90 @@
+ <a-image src="#home" position=" 0 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+       event-set__click="_target: #ganti; template: src: scenes/mainmenu.html"
+       ></a-image>
+
+<a-entity
+  position="0 3 -3"
+  geometry="primitive: plane; width: 5; height: 0.7"
+  material="color: #b2454d"
+  text="value: Kingdom Animalia; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+
+<a-entity
+  position="0 3 3.5"
+  geometry="primitive: plane; width: 5; height: 0.7"
+  material="color: #915c58"
+  rotation="0 180 0"
+  text="value: Klasifikasi Animalia; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+  <!---<a-image id="penjelasan" position="0 2.5 -2.9" src="#penj" width="6" height="1" scale="0.5 0.5 0.5" ></a-image>---->
+
+<a-obj-model  id="cat1" src="#objcat1" mtl="#mtlcat1"
+							scale="0.09 0.09 0.09"
+              rotation="0 30 0"
+							position=" -1.5 -0.5 -3.5" 
+              >
+			</a-obj-model>
+
+<a-obj-model  id="dog" src="#objdog" mtl="#mtldog" 
+              scale="0.3 0.3 0.3"
+              rotation="0 -60 0"
+              position=" -2 -1 4" 
+              event-set__mouseenter="_target: #vertebrata; visible: true"
+              event-set__mouseleave="_target: #vertebrata; visible: false"
+              event-set__click="_target: #ganti; template: src: scenes/ver.html"
+              >
+      </a-obj-model>
+
+<a-obj-model  id="bug" src="#objbug" mtl="#mtlbug"
+              scale="0.03 0.03 0.03"
+              rotation="10 -45 0"
+              position=" 2 -0.5 4" 
+              event-set__mouseenter="_target: #invertebrata; visible: true"
+              event-set__mouseleave="_target: #invertebrata; visible: false"
+              event-set__click="_target: #ganti; template: src: scenes/inv.html"
+              >
+      </a-obj-model>
+
+<a-entity
+  id="invertebrata"
+  position="1 1 2"
+  geometry="primitive: plane; width: 2.5; height: 0.5;"
+  material="color: #a53636"
+  rotation="0 180 0"
+  look-at="[camera]"
+  visible="false"
+  text="value: INVERTEBRATA\nhewan tidak bertulang belakang; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+
+  <a-entity
+  id="vertebrata"
+  position="-1 1.5 2"
+  geometry="primitive: plane; width: 2.5; height: 0.5;"
+  material="color: #a53636"
+  rotation="0 180 0"
+  look-at="[camera]"
+  visible="false"
+  text="value: VERTEBRATA/CHORDATA\nhewan bertulang belakang; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+
+<a-image id="pengertian" rotation="0 0 0" position=" 1 1 -2"  src="#peng" scale="3 2 2" 
+         
+></a-image>
+      
+<a-entity
+  id="putar"
+  position=" -3 2 -4"
+  rotation="0 30 0"
+  geometry="primitive: plane; width: 3"
+  material="color: #b25c5c"
+  
+  text="value: lihat ke arah 180 derajat\nuntuk melihat klasifikasi animalia; align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
+
+      <!---<a-plane position="0 -1 -4" rotation="-90 0 0" width="7" height="4" color="#7BC8A4" shadow></a-plane>---->
+      <a-sky color="#537c84"></a-sky>
+
+
+	<a-entity camera look-controls wasd-controls position="0 1 0">
+        <a-entity cursor
+                  fuse="false"
+                  geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
+                  material="color: #efdf02"
+                  
+                  position="0 0 -1"></a-entity>
+      </a-entity>

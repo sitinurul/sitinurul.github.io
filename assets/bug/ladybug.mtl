@@ -1,0 +1,52 @@
+# Blender MTL File: 'None'
+# Material Count: 5
+
+newmtl Body_Limbs
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.040000 0.040000 0.040000
+Ks 0.026667 0.026667 0.026667
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Head
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.094118 0.247059 0.776471
+Ks 0.100000 0.098431 0.098431
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd head.jpg
+
+newmtl Leaf
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000784 0.000784 0.000784
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump polygonum_persicaria_leaf_bump.jpg
+map_Kd Leaf_Alpha.png
+
+newmtl Thorax
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.094118 0.247059 0.776471
+Ks 0.100000 0.098431 0.098431
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd thorax.jpg
+
+newmtl Wings
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.866667 0.866667 0.866667
+Ks 0.094902 0.094510 0.094510
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd wings.jpg

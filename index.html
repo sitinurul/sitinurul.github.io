@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kingdom Animalia</title>
+    <meta name="description" content="Belajar asyik dengan WebVR"></meta>
+     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/ngokevin/kframe/e48f8cdb/components/template/dist/aframe-template-component.js"></script>
+    <script src="aframe-event-set-component.js"></script>
+    <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
+    
+   
+  </head>
+
+  <body>
+
+  <script>
+  AFRAME.registerComponent('alpha-test', {
+    dependencies: ['material'],
+    init: function () {
+      this.el.getObject3D('mesh').material.alphaTest = 0.5;
+    }
+  });
+</script>
+
+    <a-scene>
+
+      <a-assets>
+
+      <img id="ikanbg" src="assets/bg/ikanbg.jpg">
+      <img id="ikanbg2" src="assets/bg/ikanbg2.jpg">
+
+
+      <img id="home" src="assets/home.png">
+      <img id="next" src="assets/next.png">
+      <img id="frog" src="assets/frog.png">
+      <img id="turtle" src="assets/turtle.png">
+      <img id="bird" src="assets/bird.png">
+
+      <img id="anim" src="assets/anim.png">
+      <img id="klasi" src="assets/klasi.png">
+      <img id="info" src="assets/info.png">
+      <img id="extra" src="assets/video.png">
+
+        <img id="cnidaria" src="assets/cnidaria.jpg">
+        <img id="porifera" src="assets/porifera.jpg">
+        <img id="annelida" src="assets/annelida.jpg">
+        <img id="platyhelminthes" src="assets/platyhelminthes.jpg">
+        <img id="mollusca" src="assets/mollusca.jpg">
+        <img id="ctenophora" src="assets/ctenophora.jpg">
+        <img id="echino" src="assets/echino.jpg">
+        <img id="arthropoda" src="assets/crab.jpg">
+        <img id="nematoda" src="assets/nematoda.jpg">
+        <img id="peng" src="assets/animalia.png">
+
+        <img id="pori1" src="assets/pori1.jpg">
+        <img id="pori2" src="assets/pori2.jpg">
+        <img id="pori3" src="assets/pori3.jpg">
+
+        <img id="cte1" src="assets/cte1.jpg">
+        <img id="cte2" src="assets/cte2.jpg">
+
+        <img id="cni1" src="assets/cni1.jpg">
+        <img id="cni2" src="assets/cni2.jpg">
+
+        <img id="mol1" src="assets/mol1.jpg">
+        <img id="mol2" src="assets/mol2.jpg">
+        <img id="mol3" src="assets/mol3.jpg">
+        <img id="mol4" src="assets/mol4.jpg">
+        <img id="mol5" src="assets/mol5.jpg">
+
+        <img id="nem2" src="assets/nem2.jpg">
+        <img id="nem3" src="assets/nem3.jpg">
+        <img id="nem4" src="assets/nem4.jpg">
+        <img id="nem5" src="assets/nem5.jpg">
+        <img id="nem6" src="assets/nem6.jpg">
+
+        <img id="ech2" src="assets/ech2.jpg">
+        <img id="ech3" src="assets/ech3.jpg">
+        <img id="ech4" src="assets/ech4.jpg">
+        <img id="ech5" src="assets/ech5.jpg">
+
+        <img id="art2" src="assets/art2.jpg">
+        <img id="art3" src="assets/art3.jpg">
+        <img id="art4" src="assets/art4.jpg">
+
+        <img id="ann1" src="assets/ann1.jpg">
+        <img id="ann3" src="assets/ann3.jpg">
+
+        <img id="pla2" src="assets/pla2.jpg">
+        <img id="pla3" src="assets/pla3.jpg">
+
+        <img id="cho1" src="assets/cho1.jpg">
+        <img id="cho3" src="assets/cho3.jpg">
+
+        <img id="amp1" src="assets/amp1.jpg">
+        <img id="amp2" src="assets/amp2.jpg">
+
+        <img id="rep1" src="assets/rep1.png">
+        <img id="rep3" src="assets/rep3.jpg">
+        <img id="rep4" src="assets/rep4.jpg">
+
+         <img id="pis1" src="assets/pis1.jpg">
+        <img id="pis2" src="assets/pis2.jpg">
+        <img id="pis3" src="assets/pis3.jpg">
+        <img id="pis4" src="assets/pis4.jpg">
+
+        <img id="ave1" src="assets/ave1.jpg">
+        <img id="ave2" src="assets/ave2.jpg">
+
+        <img id="mam1" src="assets/mam1.jpg">
+        <img id="mam2" src="assets/mam2.jpg">
+        <img id="mam3" src="assets/mam3.jpg">
+        <img id="mam4" src="assets/mam4.jpg">
+        <img id="mam5" src="assets/mam5.jpg">
+        <img id="mam6" src="assets/mam6.jpg">
+
+
+        <audio id="meow" src="assets/audio/meow.mp3"></audio>
+        <audio id="birdy" src="assets/audio/birdy.mp3"></audio>
+        <audio id="frogy" src="assets/audio/frogy.mp3"></audio>
+        <audio id="monkey" src="assets/audio/monkey.mp3"></audio>
+        <audio id="klik" src="assets/audio/click.mp3"></audio>
+
+        <a-asset-item id="objcat1" src="assets/cat/cat.obj"></a-asset-item>
+        <a-asset-item id="mtlcat1" src="assets/cat/cat.mtl"></a-asset-item>
+        <a-asset-item id="objdog" src="assets/dog/josef.obj"></a-asset-item>
+        <a-asset-item id="mtldog" src="assets/dog/josef.mtl"></a-asset-item>
+        <a-asset-item id="objbug" src="assets/bug/ladybug.obj"></a-asset-item>
+        <a-asset-item id="mtlbug" src="assets/bug/ladybug.mtl"></a-asset-item>
+
+        <a-asset-item id="objfish" src="assets/fish/fish.obj"></a-asset-item>
+        <a-asset-item id="mtlfish" src="assets/fish/fish.mtl"></a-asset-item>
+
+         <video id="shark" src="assets/video/shark.MP4"></video>
+         <video id="see" src="assets/video/see.MP4"></video>
+
+        <img id="vidcat" src="assets/vidcat.jpg">
+        <img id="vidshark" src="assets/vidshark.jpg">
+
+
+        <a-asset-item id="dawningFont" src="fonts/dawningOfANewDayRegular.typeface.json"></a-asset-item>
+        <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+      </a-assets>
+
+      <a-entity id="ganti" template="src: scenes/opening.html"
+                position="0 0 0">
+      </a-entity>
+
+
+      <a-sky id="mask" color="#111" opacity="0" radius="7">
+        <a-animation attribute="material.opacity" begin="fade" from="0" to="1" dur="200"
+                     direction="alternate" repeat="1"></a-animation>
+      </a-sky>
+          
+    </a-scene>
+
+
+
+  </body>
+</html>
