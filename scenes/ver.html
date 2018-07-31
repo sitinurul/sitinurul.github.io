@@ -212,8 +212,19 @@
 			 ></a-image>
 
 			 <a-image src="#rep4" position=" 0 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #rep; text: value: Squamata (retilia bersisik)\ncontoh: Varanus komodoensis (komodo), kadal;"
+			 event-set__mouseenter="_target: #reprep; text: value: Squamata (retilia bersisik)\ncontoh: Varanus komodoensis (komodo), kadal;"
 			 ></a-image>
+
+			 <a-entity
+        		id="reprep"
+			  position=" 0 -1.8 -2" rotation="-30 0 0"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
 
 		</a-entity>
 	
@@ -256,8 +267,18 @@
 			 ></a-image>
 
 			 <a-image src="#pis4" position=" 0 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #pis; text: value: Dipnoi\ncontoh: Ikan paru-paru;"
+			 event-set__mouseenter="_target: #pispis; text: value: Dipnoi\ncontoh: Ikan paru-paru;"
 			 ></a-image>
+
+			  <a-entity
+        		id="pispis"
+			  position=" 0 -1.8 -2" rotation="-30 0 0"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
 
 		</a-entity>
 
@@ -330,22 +351,33 @@
 			 ></a-image>
 
 			 <a-image src="#mam4" position=" -1 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #mam; text: value: Rodential (pengerat)\ncontoh: mus musculus (mencit), marmut."
+			 event-set__mouseenter="_target: #malmal; text: value: Rodential (pengerat)\ncontoh: mus musculus (mencit), marmut."
 			 ></a-image>
 
 			 <a-image src="#mam5" position=" 0 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #mam; text: value: Lagomorpha (gigi molar tumbuh terus)\ncontoh: Orictolagus cuniculus (kelinci);"
+			 event-set__mouseenter="_target: #malmal; text: value: Lagomorpha (gigi molar tumbuh terus)\ncontoh: Orictolagus cuniculus (kelinci);"
 			 ></a-image>
 
 			 <a-image src="#mam6" position=" 1 -1 -2" width="1" height="1" sound="src: #monkey; on: click"
-			 event-set__mouseenter="_target: #mam; text: value: Primata\ncontoh: Homo sapiens (manusia), Nycticebus coucang (kukang);"
+			 event-set__mouseenter="_target: #malmal; text: value: Primata\ncontoh: Homo sapiens (manusia), Nycticebus coucang (kukang);"
 			 ></a-image>
+
+
+			  <a-entity
+        		id="malmal"
+			  position=" 0 -1.8 -2" rotation="-30 0 0"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
 		</a-entity>
 
       <a-sky color="#349189"></a-sky>
 
 
-		<a-entity camera look-controls wasd-controls position="0 1 0">
+		<a-entity camera look-controls wasd-controls position="0 1 1">
         <a-cursor
                   fuse="false"
                   geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
