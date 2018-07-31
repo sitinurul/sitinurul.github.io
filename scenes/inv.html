@@ -1,4 +1,4 @@
-  <a-image src="#home" position=" 0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
+<a-image src="#home" position=" 0.5 -2 -1" width="0.5" height="0.5" rotation="90 180 0"
 			 event-set__click="_target: #ganti; template: src: scenes/mainmenu.html"
 			 ></a-image>
 
@@ -175,6 +175,7 @@
 			 <a-image src="#pori3" position=" 1 0 -2" width="1" height="1"
 			 event-set__mouseenter="_target: #cal; text: value: Demospongiae\nGolongan bertulang lunak;"
 			 ></a-image>
+
 
 		</a-entity>
 
@@ -398,16 +399,27 @@
 			 ></a-image>
 
 			 <a-image src="#nem4" position=" -1 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #nem; text: value: Cacing filaria (Wuchereria bancrofti."
+			 event-set__mouseenter="_target: #nemnem; text: value: Cacing filaria (Wuchereria bancrofti."
 			 ></a-image>
 
 			 <a-image src="#nem5" position=" 0 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #nem; text: value: Cacing otot (Trichinella spiralis);"
+			 event-set__mouseenter="_target: #nemnem; text: value: Cacing otot (Trichinella spiralis);"
 			 ></a-image>
 
 			 <a-image src="#nem6" position=" 1 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #nem; text: value: Cacing akar tanaman\n(Heterodera radicicola);"
+			 event-set__mouseenter="_target: #nemnem; text: value: Cacing akar tanaman\n(Heterodera radicicola);"
 			 ></a-image>
+
+			 <a-entity
+        		id="nemnem"
+			  position=" 0 -1.8 -2" rotation="-30 0 0"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
+
 		</a-entity>
 
 
@@ -484,17 +496,26 @@
 			 ></a-image>
 
 			 <a-image src="#ech4" position=" 1 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #ech; text: value: Holothuroidea (timun laut);"
+			 event-set__mouseenter="_target: #echech; text: value: Holothuroidea (timun laut);"
 			 ></a-image>
 			 <a-image src="#ech5" position=" -1 -1 -2" width="1" height="1"
-			 event-set__mouseenter="_target: #ech; text: value: Crinoidea (lili laut);"
+			 event-set__mouseenter="_target: #echech; text: value: Crinoidea (lili laut);"
 			 ></a-image>
+
+			  <a-entity
+        		id="echech"
+			  position=" 0 -1.8 -2" rotation="-30 0 0"
+			  geometry="primitive: plane; width: 3; height: 0.4;"
+			  material="color: #647fc4"
+			  text="value: Klasifikasi Mollusca; 
+			  width: 2.5;
+			  align: center; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; color: black;">
+			 </a-entity>
 		</a-entity>
 
 
 
       <a-sky color="#4a9b77"></a-sky>
-
 
 <a-entity camera look-controls wasd-controls position="0 1 1">
         <a-cursor
