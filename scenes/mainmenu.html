@@ -11,38 +11,38 @@
           color="#3e3f44"
           material="side: double; opacity: 0.5; transparent: true"></a-entity>
 
-<a-image src="#info" position="-0.7 1.5 -2.5" width="0.3" height="0.3" rotation="0 30 0" sound="src: #klik; on: click"
+<a-image src="#info" position="-0.7 1.5 -2" width="0.3" height="0.3" rotation="0 30 0" sound="src: #klik; on: click"
        event-set__click="_target: #ganti; template: src: scenes/opening.html"
        event-set__mouseenter="_target: #inf; visible: true"
        event-set__mouseleave="_target: #inf; visible: false"
        ></a-image>
 
-       <a-text id="inf" visible="false" <a-text position="-0.7 1 -2.5" rotation="0 30 0" scale="0.3 0.3 0.3"
+       <a-text id="inf" visible="false" <a-text position="-0.7 1 -2" rotation="0 30 0" scale="0.3 0.3 0.3"
       value="kembali ke\nlaman info pembuka" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center" ></a-text>
 
 
-<a-image src="#anim" position="0 1.5 -2.5" width="0.2" height="0.2" sound="src: #klik; on: click"
+<a-image src="#anim" position="0 1.5 -2" width="0.2" height="0.2" sound="src: #klik; on: click"
        event-set__click="_target: #ganti; template: src: scenes/main.html"
         event-set__mouseenter="_target: #aa; visible: true"
        event-set__mouseleave="_target: #aa; visible: false"
        ></a-image>
 
-       <a-text id="aa" visible="false" <a-text position="0 1 -2.5" scale="0.3 0.3 0.3"
+       <a-text id="aa" visible="false" <a-text position="0 1 -2" scale="0.3 0.3 0.3"
       value="Materi Kingdom Animalia" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center" ></a-text>
 
-  <a-image src="#extra" position="0.7 1.5 -2.5" width="0.3" height="0.3" rotation="0 -30 0" sound="src: #klik; on: click"
+  <a-image src="#extra" position="0.7 1.5 -2" width="0.3" height="0.3" rotation="0 -30 0" sound="src: #klik; on: click"
        event-set__click="_target: #ganti; template: src: scenes/video.html"
         event-set__mouseenter="_target: #vvv; visible: true"
        event-set__mouseleave="_target: #vvv; visible: false"
        ></a-image>
 
-       <a-text id="vvv" visible="false" <a-text position="0.7 1 -2.5" rotation="0 -30 0" scale="0.3 0.3 0.3"
+       <a-text id="vvv" visible="false" <a-text position="0.7 1 -2" rotation="0 -30 0" scale="0.3 0.3 0.3"
       value="Video 360 derajat" font="https://cdn.glitch.com/13258c51-0acc-4d99-ab9f-85f8eec172c6%2FOswald-Bold.fnt?1506384504220" align="center" opacity="1" color="#ffffff" anchor="center" ></a-text>
 
       <a-sky color="#3a467f"></a-sky>
 
 
-	<a-entity camera look-controls wasd-controls position="0 1 4">
+	<a-entity camera look-controls wasd-controls position="0 1 2">
         <a-cursor
                   fuse="false"
                   geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
