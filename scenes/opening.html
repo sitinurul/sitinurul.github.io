@@ -5,7 +5,7 @@
   material="color: #b2454d"
   text="value: Selamat Datang di WebVR!\n\nKamu dapat berinteraksi dengan\n sekelilingmu (360 derajat),\ndan memilih objek mana yang mau kamu lihat dengan menggerakkan kepalamu.\n\narahkan lingkaran kuning (kursor)\n ke tanda panah dibawah dan klik!; align: center; width: 4; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
 
-  <a-image src="#next" position=" 0 0 -2.3" width="0.5" height="0.5" rotation="0 0 0"
+  <a-image src="#next" position=" 0 0 -2.4" width="0.5" height="0.5" rotation="0 0 0"
        event-set__click="_target: #op2; visible: true;"
       event-set__click2="_event: click; _target: #op1; visible: false"
        ></a-image>
@@ -45,7 +45,7 @@
   material="color: #367c44"
   text="value: Virtual Reality ini berisi materi tentang Kingdom Animalia\n\nklik tanda panah dibawah untuk mengarahkanmu ke main menu; align: center; width: 4; font: https://cdn.aframe.io/fonts/KelsonSans.fnt;"></a-entity>
 
-  <a-image src="#next" position=" 0 0 -2.3" width="0.5" height="0.5" rotation="0 0 0"
+  <a-image src="#next" position=" 0 0 -2.4" width="0.5" height="0.5" rotation="0 0 0"
        event-set__click="_target: #ganti; template: src: scenes/mainmenu.html"
        ></a-image>
 
@@ -53,12 +53,14 @@
 
 
       <!---#3f65a3<a-plane position="0 -1 -4" rotation="-90 0 0" width="7" height="4" color="#7BC8A4" shadow></a-plane>---->
-      <a-sky id="sky" color="#3f65a3"></a-sky>
+      <a-sky id="sky" color="#3f65a3" rotation="0 -130 0"></a-sky>
 
-<a-entity camera look-controls wasd-controls position="0 1 1">
-        <a-cursor
+
+  <a-entity camera look-controls wasd-controls position="0 1 0">
+        <a-entity cursor
                   fuse="false"
                   geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
                   material="color: #efdf02"
-                  position="0 0 -1"></a-cursor>
+                  
+                  position="0 0 -1"></a-entity>
       </a-entity>
